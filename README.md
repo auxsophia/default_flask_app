@@ -89,3 +89,9 @@ flask --app run.py db upgrade
 ```
 
 Note: the factory already imports app.models, so any model defined there is visible to Flask-Migrate automatically. If it's not picking up a model, the model's module isn't being imported — that's always the cause.
+
+## Clone template repo
+
+```bash
+gh repo create my-new-project --template auxsophia/default_flask_app --private --clone
+```
